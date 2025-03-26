@@ -12,4 +12,16 @@
            </lightning-datatable>
         </template>
     </lightning-card>
+
+    <!-- Added by Amod-->
+    <lightning-card></lightning-card>
+        <template if:true={accounts.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={accounts.data}
+                columns={columns}
+            >
+           </lightning-datatable>
+        </template>
+    </lightning-card>
 </template>
