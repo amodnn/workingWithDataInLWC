@@ -20,4 +20,14 @@ export default class AccountList extends LightningElement {
         return (this.accounts.error) ?
             reduceErrors(this.accounts.error) : [];
     }
+
+    get errorsCustomOne() {
+        return (this.accounts.error) ?
+            reduceErrors(this.accounts.error) : [];
+    }
+
+    get errorsCustomTwo() {
+        return (this.accounts.error) ?
+            reduceErrors(this.accounts.error) : [];
+    }
 }
